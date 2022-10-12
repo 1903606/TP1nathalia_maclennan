@@ -35,6 +35,7 @@
             this.pictureBoxLogo1 = new System.Windows.Forms.PictureBox();
             this.tabPageDossier2 = new System.Windows.Forms.TabPage();
             this.tabPageCahier3 = new System.Windows.Forms.TabPage();
+            this.buttonQuitter1 = new System.Windows.Forms.Button();
             this.tabControlCollege1.SuspendLayout();
             this.tabPageAcceuil1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo1)).BeginInit();
@@ -48,7 +49,7 @@
             this.tabControlCollege1.Location = new System.Drawing.Point(40, 31);
             this.tabControlCollege1.Name = "tabControlCollege1";
             this.tabControlCollege1.SelectedIndex = 0;
-            this.tabControlCollege1.Size = new System.Drawing.Size(711, 382);
+            this.tabControlCollege1.Size = new System.Drawing.Size(711, 370);
             this.tabControlCollege1.TabIndex = 0;
             // 
             // tabPageAcceuil1
@@ -58,7 +59,7 @@
             this.tabPageAcceuil1.Location = new System.Drawing.Point(4, 24);
             this.tabPageAcceuil1.Name = "tabPageAcceuil1";
             this.tabPageAcceuil1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAcceuil1.Size = new System.Drawing.Size(703, 354);
+            this.tabPageAcceuil1.Size = new System.Drawing.Size(703, 342);
             this.tabPageAcceuil1.TabIndex = 0;
             this.tabPageAcceuil1.Text = "Acceuil";
             this.tabPageAcceuil1.UseVisualStyleBackColor = true;
@@ -103,11 +104,21 @@
             this.tabPageCahier3.Text = "Cahier de notes";
             this.tabPageCahier3.UseVisualStyleBackColor = true;
             // 
+            // buttonQuitter1
+            // 
+            this.buttonQuitter1.Location = new System.Drawing.Point(655, 407);
+            this.buttonQuitter1.Name = "buttonQuitter1";
+            this.buttonQuitter1.Size = new System.Drawing.Size(96, 35);
+            this.buttonQuitter1.TabIndex = 1;
+            this.buttonQuitter1.Text = "Quitter";
+            this.buttonQuitter1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 450);
+            this.Controls.Add(this.buttonQuitter1);
             this.Controls.Add(this.tabControlCollege1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -128,5 +139,6 @@
         private TabPage tabPageCahier3;
         private Label label1;
         private PictureBox pictureBoxLogo1;
+        private Button buttonQuitter1;
     }
 }
