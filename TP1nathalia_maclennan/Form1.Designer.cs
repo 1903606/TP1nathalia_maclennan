@@ -110,6 +110,7 @@
             this.ClientSize = new System.Drawing.Size(802, 450);
             this.Controls.Add(this.tabControlCollege1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Collège Nathalia Maclennan";
             this.tabControlCollege1.ResumeLayout(false);
             this.tabPageAcceuil1.ResumeLayout(false);
