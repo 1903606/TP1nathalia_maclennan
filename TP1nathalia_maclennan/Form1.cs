@@ -11,5 +11,10 @@ namespace TP1nathalia_maclennan
         {
 
         }
+
+        private void buttonQuitter1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
