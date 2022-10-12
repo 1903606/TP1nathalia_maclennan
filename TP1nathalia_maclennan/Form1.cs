@@ -6,5 +6,10 @@ namespace TP1nathalia_maclennan
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
