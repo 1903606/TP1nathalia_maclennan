@@ -28,72 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
+            this.tabControlCollege1 = new System.Windows.Forms.TabControl();
+            this.tabPageAcceuil1 = new System.Windows.Forms.TabPage();
+            this.tabPageDossier2 = new System.Windows.Forms.TabPage();
+            this.tabPageCahier3 = new System.Windows.Forms.TabPage();
+            this.tabControlCollege1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabControlCollege1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(40, 31);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(711, 382);
-            this.tabControl1.TabIndex = 0;
+            this.tabControlCollege1.Controls.Add(this.tabPageAcceuil1);
+            this.tabControlCollege1.Controls.Add(this.tabPageDossier2);
+            this.tabControlCollege1.Controls.Add(this.tabPageCahier3);
+            this.tabControlCollege1.Location = new System.Drawing.Point(40, 31);
+            this.tabControlCollege1.Name = "tabControlCollege1";
+            this.tabControlCollege1.SelectedIndex = 0;
+            this.tabControlCollege1.Size = new System.Drawing.Size(711, 382);
+            this.tabControlCollege1.TabIndex = 0;
             // 
-            // tabPage1
+            // tabPageAcceuil1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(703, 354);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPageAcceuil1.Location = new System.Drawing.Point(4, 24);
+            this.tabPageAcceuil1.Name = "tabPageAcceuil1";
+            this.tabPageAcceuil1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAcceuil1.Size = new System.Drawing.Size(703, 354);
+            this.tabPageAcceuil1.TabIndex = 0;
+            this.tabPageAcceuil1.Text = "Acceuil";
+            this.tabPageAcceuil1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPageDossier2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 72);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageDossier2.Location = new System.Drawing.Point(4, 24);
+            this.tabPageDossier2.Name = "tabPageDossier2";
+            this.tabPageDossier2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDossier2.Size = new System.Drawing.Size(703, 354);
+            this.tabPageDossier2.TabIndex = 1;
+            this.tabPageDossier2.Text = "Dossier";
+            this.tabPageDossier2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // tabPageCahier3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(703, 354);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPageCahier3.Location = new System.Drawing.Point(4, 24);
+            this.tabPageCahier3.Name = "tabPageCahier3";
+            this.tabPageCahier3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCahier3.Size = new System.Drawing.Size(703, 354);
+            this.tabPageCahier3.TabIndex = 2;
+            this.tabPageCahier3.Text = "Cahier de notes";
+            this.tabPageCahier3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControlCollege1);
             this.Name = "Form1";
             this.Text = "Collège Nathalia Maclennan";
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlCollege1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private TabPage tabPage3;
+        private TabControl tabControlCollege1;
+        private TabPage tabPageAcceuil1;
+        private TabPage tabPageDossier2;
+        private TabPage tabPageCahier3;
     }
 }
