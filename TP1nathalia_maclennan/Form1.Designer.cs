@@ -60,13 +60,14 @@
             this.labelPrenom = new System.Windows.Forms.Label();
             this.labelDossierEtudiant2 = new System.Windows.Forms.Label();
             this.tabPageCahier3 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBoxMoyenneGeneral = new System.Windows.Forms.TextBox();
+            this.textBoxMoyenne5 = new System.Windows.Forms.TextBox();
+            this.textBoxMoyenne4 = new System.Windows.Forms.TextBox();
+            this.textBoxMoyenne3 = new System.Windows.Forms.TextBox();
+            this.textBoxMoyenne2 = new System.Windows.Forms.TextBox();
+            this.textBoxMoyenne1 = new System.Windows.Forms.TextBox();
             this.textBoxNote5 = new System.Windows.Forms.TextBox();
             this.textBoxNote4 = new System.Windows.Forms.TextBox();
             this.textBoxNote3 = new System.Windows.Forms.TextBox();
@@ -92,7 +93,6 @@
             this.errorProviderNote3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderNote4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderNote5 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControlCollege1.SuspendLayout();
             this.tabPageAcceuil1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo1)).BeginInit();
@@ -415,12 +415,12 @@
             // 
             this.tabPageCahier3.Controls.Add(this.comboBox1);
             this.tabPageCahier3.Controls.Add(this.label2);
-            this.tabPageCahier3.Controls.Add(this.textBox19);
-            this.tabPageCahier3.Controls.Add(this.textBox18);
-            this.tabPageCahier3.Controls.Add(this.textBox17);
-            this.tabPageCahier3.Controls.Add(this.textBox16);
-            this.tabPageCahier3.Controls.Add(this.textBox15);
-            this.tabPageCahier3.Controls.Add(this.textBox14);
+            this.tabPageCahier3.Controls.Add(this.textBoxMoyenneGeneral);
+            this.tabPageCahier3.Controls.Add(this.textBoxMoyenne5);
+            this.tabPageCahier3.Controls.Add(this.textBoxMoyenne4);
+            this.tabPageCahier3.Controls.Add(this.textBoxMoyenne3);
+            this.tabPageCahier3.Controls.Add(this.textBoxMoyenne2);
+            this.tabPageCahier3.Controls.Add(this.textBoxMoyenne1);
             this.tabPageCahier3.Controls.Add(this.textBoxNote5);
             this.tabPageCahier3.Controls.Add(this.textBoxNote4);
             this.tabPageCahier3.Controls.Add(this.textBoxNote3);
@@ -445,6 +445,17 @@
             this.tabPageCahier3.Text = "Cahier de notes";
             this.tabPageCahier3.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Groupe 50 ",
+            "Groupe 51"});
+            this.comboBox1.Location = new System.Drawing.Point(261, 15);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(422, 23);
+            this.comboBox1.TabIndex = 24;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -455,53 +466,53 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Moyenne générale";
             // 
-            // textBox19
+            // textBoxMoyenneGeneral
             // 
-            this.textBox19.Location = new System.Drawing.Point(477, 393);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(100, 23);
-            this.textBox19.TabIndex = 22;
+            this.textBoxMoyenneGeneral.Location = new System.Drawing.Point(477, 393);
+            this.textBoxMoyenneGeneral.Name = "textBoxMoyenneGeneral";
+            this.textBoxMoyenneGeneral.ReadOnly = true;
+            this.textBoxMoyenneGeneral.Size = new System.Drawing.Size(100, 23);
+            this.textBoxMoyenneGeneral.TabIndex = 22;
             // 
-            // textBox18
+            // textBoxMoyenne5
             // 
-            this.textBox18.Location = new System.Drawing.Point(597, 353);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(100, 23);
-            this.textBox18.TabIndex = 21;
+            this.textBoxMoyenne5.Location = new System.Drawing.Point(597, 353);
+            this.textBoxMoyenne5.Name = "textBoxMoyenne5";
+            this.textBoxMoyenne5.ReadOnly = true;
+            this.textBoxMoyenne5.Size = new System.Drawing.Size(100, 23);
+            this.textBoxMoyenne5.TabIndex = 21;
             // 
-            // textBox17
+            // textBoxMoyenne4
             // 
-            this.textBox17.Location = new System.Drawing.Point(597, 324);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(100, 23);
-            this.textBox17.TabIndex = 20;
+            this.textBoxMoyenne4.Location = new System.Drawing.Point(597, 324);
+            this.textBoxMoyenne4.Name = "textBoxMoyenne4";
+            this.textBoxMoyenne4.ReadOnly = true;
+            this.textBoxMoyenne4.Size = new System.Drawing.Size(100, 23);
+            this.textBoxMoyenne4.TabIndex = 20;
             // 
-            // textBox16
+            // textBoxMoyenne3
             // 
-            this.textBox16.Location = new System.Drawing.Point(597, 295);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(100, 23);
-            this.textBox16.TabIndex = 19;
+            this.textBoxMoyenne3.Location = new System.Drawing.Point(597, 295);
+            this.textBoxMoyenne3.Name = "textBoxMoyenne3";
+            this.textBoxMoyenne3.ReadOnly = true;
+            this.textBoxMoyenne3.Size = new System.Drawing.Size(100, 23);
+            this.textBoxMoyenne3.TabIndex = 19;
             // 
-            // textBox15
+            // textBoxMoyenne2
             // 
-            this.textBox15.Location = new System.Drawing.Point(597, 266);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(100, 23);
-            this.textBox15.TabIndex = 18;
+            this.textBoxMoyenne2.Location = new System.Drawing.Point(597, 266);
+            this.textBoxMoyenne2.Name = "textBoxMoyenne2";
+            this.textBoxMoyenne2.ReadOnly = true;
+            this.textBoxMoyenne2.Size = new System.Drawing.Size(100, 23);
+            this.textBoxMoyenne2.TabIndex = 18;
             // 
-            // textBox14
+            // textBoxMoyenne1
             // 
-            this.textBox14.Location = new System.Drawing.Point(597, 237);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(100, 23);
-            this.textBox14.TabIndex = 17;
+            this.textBoxMoyenne1.Location = new System.Drawing.Point(597, 237);
+            this.textBoxMoyenne1.Name = "textBoxMoyenne1";
+            this.textBoxMoyenne1.ReadOnly = true;
+            this.textBoxMoyenne1.Size = new System.Drawing.Size(100, 23);
+            this.textBoxMoyenne1.TabIndex = 17;
             // 
             // textBoxNote5
             // 
@@ -691,17 +702,6 @@
             // 
             this.errorProviderNote5.ContainerControl = this;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Groupe 50 ",
-            "Groupe 51"});
-            this.comboBox1.Location = new System.Drawing.Point(261, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(422, 23);
-            this.comboBox1.TabIndex = 24;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -784,12 +784,12 @@
         private PictureBox pictureBox2;
         private TextBox textBoxNote1;
         private Label label2;
-        private TextBox textBox19;
-        private TextBox textBox18;
-        private TextBox textBox17;
-        private TextBox textBox16;
-        private TextBox textBox15;
-        private TextBox textBox14;
+        private TextBox textBoxMoyenneGeneral;
+        private TextBox textBoxMoyenne5;
+        private TextBox textBoxMoyenne4;
+        private TextBox textBoxMoyenne3;
+        private TextBox textBoxMoyenne2;
+        private TextBox textBoxMoyenne1;
         private TextBox textBoxNote5;
         private TextBox textBoxNote4;
         private TextBox textBoxNote3;

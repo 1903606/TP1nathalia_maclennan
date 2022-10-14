@@ -244,7 +244,21 @@ namespace TP1nathalia_maclennan
                 textBoxNote4.Text = numericUpDownNote4.Value.ToString();
                 textBoxNote5.Text = numericUpDownNote5.Value.ToString();
 
-                //
+                //Moyenne generale
+                double moyenneGenerale = ((double)numericUpDownNote1.Value + (double)numericUpDownNote2.Value + (double)numericUpDownNote3.Value + (double)numericUpDownNote4.Value + (double)numericUpDownNote5.Value) / 5;
+
+                if(moyenneGenerale < 60)
+                {
+                    textBoxMoyenneGeneral.Text = moyenneGenerale.ToString("0.##") + "%";
+                    textBoxMoyenneGeneral.BackColor = Color.Red;
+                } else {
+                    textBoxMoyenneGeneral.Text = moyenneGenerale.ToString("0.##")+ "%";
+                    textBoxMoyenneGeneral.BackColor = Color.Green;
+                }
+
+                //Moyenne des cours ***BONUS***
+
+
 
             }
         }
