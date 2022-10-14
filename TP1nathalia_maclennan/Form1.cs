@@ -21,5 +21,11 @@ namespace TP1nathalia_maclennan
         {
 
         }
+
+        // Fonction qui sauvegarde un étudiant 
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
