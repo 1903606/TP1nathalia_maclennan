@@ -638,6 +638,7 @@
             this.buttonSupprimerEleve.TabIndex = 3;
             this.buttonSupprimerEleve.Text = "Supprimer l\'étudiant sélectionné";
             this.buttonSupprimerEleve.UseVisualStyleBackColor = true;
+            this.buttonSupprimerEleve.Click += new System.EventHandler(this.buttonSupprimerEleve_Click);
             // 
             // listBoxGroupe
             // 

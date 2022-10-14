@@ -262,5 +262,29 @@ namespace TP1nathalia_maclennan
 
             }
         }
+
+        //Button qui supprimer etudiant selectionnee
+        private void buttonSupprimerEleve_Click(object sender, EventArgs e)
+        {
+            //MessageBox qui demande oui/non
+            DialogResult dialogResult = MessageBox.Show("Voulez-vous supprimer l’étudiant " + textBoxPrenom.Text + " " + textBoxNom.Text + " de la liste?" + "", "Message de confirmation", MessageBoxButtons.YesNo);
+
+            //Boucle qui parcours les etudiants et supprime les donnees
+            if (dialogResult == DialogResult.Yes)
+
+                for (int items = listBoxGroupe.SelectedItems.Count - 1; items >= 0; items--)
+                {
+                    listBoxGroupe.Items.RemoveAt(listBoxGroupe.SelectedIndex);
+                    textBoxNote1.Clear();
+                    textBoxNote2.Clear();
+                    textBoxNote3.Clear();
+                    textBoxNote4.Clear();
+                    textBoxNote5.Clear();
+                    textBoxMoyenneGeneral.Clear();
+                }
+            else if (dialogResult == DialogResult.No)
+            { 
+            }
+        }
     }
 }
