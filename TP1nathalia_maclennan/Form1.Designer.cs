@@ -67,11 +67,11 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxNote5 = new System.Windows.Forms.TextBox();
+            this.textBoxNote4 = new System.Windows.Forms.TextBox();
+            this.textBoxNote3 = new System.Windows.Forms.TextBox();
+            this.textBoxNote2 = new System.Windows.Forms.TextBox();
+            this.textBoxNote1 = new System.Windows.Forms.TextBox();
             this.labelMoyenne = new System.Windows.Forms.Label();
             this.labelNote = new System.Windows.Forms.Label();
             this.textBoxStructure = new System.Windows.Forms.TextBox();
@@ -81,7 +81,6 @@
             this.textBoxBase = new System.Windows.Forms.TextBox();
             this.labelCours = new System.Windows.Forms.Label();
             this.buttonSupprimerEleve = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.listBoxGroupe = new System.Windows.Forms.ListBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonQuitter1 = new System.Windows.Forms.Button();
@@ -93,6 +92,7 @@
             this.errorProviderNote3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderNote4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderNote5 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControlCollege1.SuspendLayout();
             this.tabPageAcceuil1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo1)).BeginInit();
@@ -413,6 +413,7 @@
             // 
             // tabPageCahier3
             // 
+            this.tabPageCahier3.Controls.Add(this.comboBox1);
             this.tabPageCahier3.Controls.Add(this.label2);
             this.tabPageCahier3.Controls.Add(this.textBox19);
             this.tabPageCahier3.Controls.Add(this.textBox18);
@@ -420,11 +421,11 @@
             this.tabPageCahier3.Controls.Add(this.textBox16);
             this.tabPageCahier3.Controls.Add(this.textBox15);
             this.tabPageCahier3.Controls.Add(this.textBox14);
-            this.tabPageCahier3.Controls.Add(this.textBox13);
-            this.tabPageCahier3.Controls.Add(this.textBox12);
-            this.tabPageCahier3.Controls.Add(this.textBox11);
-            this.tabPageCahier3.Controls.Add(this.textBox10);
-            this.tabPageCahier3.Controls.Add(this.textBox4);
+            this.tabPageCahier3.Controls.Add(this.textBoxNote5);
+            this.tabPageCahier3.Controls.Add(this.textBoxNote4);
+            this.tabPageCahier3.Controls.Add(this.textBoxNote3);
+            this.tabPageCahier3.Controls.Add(this.textBoxNote2);
+            this.tabPageCahier3.Controls.Add(this.textBoxNote1);
             this.tabPageCahier3.Controls.Add(this.labelMoyenne);
             this.tabPageCahier3.Controls.Add(this.labelNote);
             this.tabPageCahier3.Controls.Add(this.textBoxStructure);
@@ -434,7 +435,6 @@
             this.tabPageCahier3.Controls.Add(this.textBoxBase);
             this.tabPageCahier3.Controls.Add(this.labelCours);
             this.tabPageCahier3.Controls.Add(this.buttonSupprimerEleve);
-            this.tabPageCahier3.Controls.Add(this.richTextBox1);
             this.tabPageCahier3.Controls.Add(this.listBoxGroupe);
             this.tabPageCahier3.Controls.Add(this.pictureBox2);
             this.tabPageCahier3.Location = new System.Drawing.Point(4, 24);
@@ -503,45 +503,45 @@
             this.textBox14.Size = new System.Drawing.Size(100, 23);
             this.textBox14.TabIndex = 17;
             // 
-            // textBox13
+            // textBoxNote5
             // 
-            this.textBox13.Location = new System.Drawing.Point(477, 353);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(100, 23);
-            this.textBox13.TabIndex = 16;
+            this.textBoxNote5.Location = new System.Drawing.Point(477, 353);
+            this.textBoxNote5.Name = "textBoxNote5";
+            this.textBoxNote5.ReadOnly = true;
+            this.textBoxNote5.Size = new System.Drawing.Size(100, 23);
+            this.textBoxNote5.TabIndex = 16;
             // 
-            // textBox12
+            // textBoxNote4
             // 
-            this.textBox12.Location = new System.Drawing.Point(477, 324);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(100, 23);
-            this.textBox12.TabIndex = 15;
+            this.textBoxNote4.Location = new System.Drawing.Point(477, 324);
+            this.textBoxNote4.Name = "textBoxNote4";
+            this.textBoxNote4.ReadOnly = true;
+            this.textBoxNote4.Size = new System.Drawing.Size(100, 23);
+            this.textBoxNote4.TabIndex = 15;
             // 
-            // textBox11
+            // textBoxNote3
             // 
-            this.textBox11.Location = new System.Drawing.Point(477, 295);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(100, 23);
-            this.textBox11.TabIndex = 14;
+            this.textBoxNote3.Location = new System.Drawing.Point(477, 295);
+            this.textBoxNote3.Name = "textBoxNote3";
+            this.textBoxNote3.ReadOnly = true;
+            this.textBoxNote3.Size = new System.Drawing.Size(100, 23);
+            this.textBoxNote3.TabIndex = 14;
             // 
-            // textBox10
+            // textBoxNote2
             // 
-            this.textBox10.Location = new System.Drawing.Point(477, 266);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(100, 23);
-            this.textBox10.TabIndex = 13;
+            this.textBoxNote2.Location = new System.Drawing.Point(477, 266);
+            this.textBoxNote2.Name = "textBoxNote2";
+            this.textBoxNote2.ReadOnly = true;
+            this.textBoxNote2.Size = new System.Drawing.Size(100, 23);
+            this.textBoxNote2.TabIndex = 13;
             // 
-            // textBox4
+            // textBoxNote1
             // 
-            this.textBox4.Location = new System.Drawing.Point(477, 237);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 12;
+            this.textBoxNote1.Location = new System.Drawing.Point(477, 237);
+            this.textBoxNote1.Name = "textBoxNote1";
+            this.textBoxNote1.ReadOnly = true;
+            this.textBoxNote1.Size = new System.Drawing.Size(100, 23);
+            this.textBoxNote1.TabIndex = 12;
             // 
             // labelMoyenne
             // 
@@ -628,22 +628,15 @@
             this.buttonSupprimerEleve.Text = "Supprimer l\'étudiant sélectionné";
             this.buttonSupprimerEleve.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(261, 62);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(422, 96);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
-            // 
             // listBoxGroupe
             // 
             this.listBoxGroupe.FormattingEnabled = true;
             this.listBoxGroupe.ItemHeight = 15;
-            this.listBoxGroupe.Location = new System.Drawing.Point(261, 11);
+            this.listBoxGroupe.Location = new System.Drawing.Point(261, 44);
             this.listBoxGroupe.Name = "listBoxGroupe";
-            this.listBoxGroupe.Size = new System.Drawing.Size(422, 34);
+            this.listBoxGroupe.Size = new System.Drawing.Size(422, 109);
             this.listBoxGroupe.TabIndex = 1;
+            this.listBoxGroupe.SelectedIndexChanged += new System.EventHandler(this.listBoxGroupe_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
@@ -697,6 +690,17 @@
             // errorProviderNote5
             // 
             this.errorProviderNote5.ContainerControl = this;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Groupe 50 ",
+            "Groupe 51"});
+            this.comboBox1.Location = new System.Drawing.Point(261, 15);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(422, 23);
+            this.comboBox1.TabIndex = 24;
             // 
             // Form1
             // 
@@ -776,10 +780,9 @@
         private TextBox textBoxBase;
         private Label labelCours;
         private Button buttonSupprimerEleve;
-        private RichTextBox richTextBox1;
         private ListBox listBoxGroupe;
         private PictureBox pictureBox2;
-        private TextBox textBox4;
+        private TextBox textBoxNote1;
         private Label label2;
         private TextBox textBox19;
         private TextBox textBox18;
@@ -787,10 +790,10 @@
         private TextBox textBox16;
         private TextBox textBox15;
         private TextBox textBox14;
-        private TextBox textBox13;
-        private TextBox textBox12;
-        private TextBox textBox11;
-        private TextBox textBox10;
+        private TextBox textBoxNote5;
+        private TextBox textBoxNote4;
+        private TextBox textBoxNote3;
+        private TextBox textBoxNote2;
         private ErrorProvider errorProviderPrenom;
         private ErrorProvider errorProviderNom;
         private ErrorProvider errorProviderCode;
@@ -800,5 +803,6 @@
         private ErrorProvider errorProviderNote4;
         private ErrorProvider errorProviderNote5;
         private ComboBox comboBoxGrp;
+        private ComboBox comboBox1;
     }
 }

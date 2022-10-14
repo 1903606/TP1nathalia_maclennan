@@ -2,6 +2,10 @@ namespace TP1nathalia_maclennan
 {
     public partial class Form1 : Form
     {
+        // Iniatialisation tableau
+        Etudiant[] tabEtudiant = new Etudiant[Constante.nbEtudMx];
+        int nb_etud = 0;
+        
         public Form1()
         {
             InitializeComponent();
@@ -11,7 +15,7 @@ namespace TP1nathalia_maclennan
         {
 
         }
-
+        // Button quitter pour fermer l'application
         private void buttonQuitter1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -62,7 +66,7 @@ namespace TP1nathalia_maclennan
                     errorProviderNom.Clear();
                 }
                 // Validation de la zone de saisie pour le code permanent
-                string pattern = @"^[A-Z{1,4}0-9{1,6}]$";
+                string pattern = "^[A-Z]{4}[0-9]{6}$";
 
                 if (!System.Text.RegularExpressions.Regex.IsMatch(textBoxCodePerm.Text, pattern))
                 {
@@ -70,7 +74,7 @@ namespace TP1nathalia_maclennan
 
                     MessageBox.Show("Veuillez entrer un code permanent valide", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     // ErrorProvider
-                    errorProviderCode.SetError(textBoxCodePerm, "Doit contenir des AAAA999999");
+                    errorProviderCode.SetError(textBoxCodePerm, "Doit le format AAAA999999");
                     return;
                 }
                 else
@@ -168,6 +172,15 @@ namespace TP1nathalia_maclennan
                     // Enleve le ErrorProvider
                     errorProviderNote5.Clear();
                 }
+                // Creation d'un objet Étudiant
+                Etudiant unEtudiant = new Etudiant(textBoxCodePerm.Text, textBoxPrenom.Text, textBoxNom.Text);
+                tabEtudiant[nb_etud++] = unEtudiant;
+
+                //Ajout de l'etudiant dans Cahier de notes
+                listBoxGroupe.Items.Add(unEtudiant);
+
+                //MessageBox qui indique les donnees ont sauvegarder
+                MessageBox.Show("Les données de l’étudiant ont été sauvegardées! :)", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -175,6 +188,8 @@ namespace TP1nathalia_maclennan
                 MessageBox.Show("Erreur", "Donnees non-valide");
                 return;
             }
+            
+
     }
 
         private void numericUpDownNote5_ValueChanged(object sender, EventArgs e)
@@ -210,6 +225,28 @@ namespace TP1nathalia_maclennan
             numericUpDownNote4.ResetText();
             numericUpDownNote5.ResetText();
 
+        }
+
+        //Fonction qui va permettre afficher les elements de mes objets Etudiant
+        private void listBoxGroupe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Creation un objet Etudiant
+            Etudiant unEtudiant = new Etudiant();
+            unEtudiant = (Etudiant)listBoxGroupe.SelectedItem;
+
+            //Boucle qui va selectionner les notes des etudiants selectionne
+
+            foreach (Etudiant itemCourant in listBoxGroupe.SelectedItems)
+            {
+                textBoxNote1.Text = numericUpDownNote1.Value.ToString();
+                textBoxNote2.Text = numericUpDownNote2.Value.ToString();
+                textBoxNote3.Text = numericUpDownNote3.Value.ToString();
+                textBoxNote4.Text = numericUpDownNote4.Value.ToString();
+                textBoxNote5.Text = numericUpDownNote5.Value.ToString();
+
+                //
+
+            }
         }
     }
 }
