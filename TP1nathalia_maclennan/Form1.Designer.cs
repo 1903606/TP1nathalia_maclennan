@@ -34,19 +34,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxLogo1 = new System.Windows.Forms.PictureBox();
             this.tabPageDossier2 = new System.Windows.Forms.TabPage();
+            this.labelResultat = new System.Windows.Forms.Label();
+            this.labelMatiere = new System.Windows.Forms.Label();
+            this.labelGroupe = new System.Windows.Forms.Label();
+            this.labelCode = new System.Windows.Forms.Label();
+            this.labelNom = new System.Windows.Forms.Label();
+            this.labelPrenom = new System.Windows.Forms.Label();
+            this.labelDossierEtudiant2 = new System.Windows.Forms.Label();
             this.tabPageCahier3 = new System.Windows.Forms.TabPage();
             this.buttonQuitter1 = new System.Windows.Forms.Button();
-            this.labelDossierEtudiant2 = new System.Windows.Forms.Label();
-            this.labelPrenom = new System.Windows.Forms.Label();
-            this.labelNom = new System.Windows.Forms.Label();
-            this.labelCode = new System.Windows.Forms.Label();
-            this.labelGroupe = new System.Windows.Forms.Label();
-            this.labelMatiere = new System.Windows.Forms.Label();
-            this.labelResultat = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControlCollege1.SuspendLayout();
             this.tabPageAcceuil1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo1)).BeginInit();
             this.tabPageDossier2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlCollege1
@@ -94,6 +96,7 @@
             // 
             // tabPageDossier2
             // 
+            this.tabPageDossier2.Controls.Add(this.pictureBox1);
             this.tabPageDossier2.Controls.Add(this.labelResultat);
             this.tabPageDossier2.Controls.Add(this.labelMatiere);
             this.tabPageDossier2.Controls.Add(this.labelGroupe);
@@ -108,6 +111,80 @@
             this.tabPageDossier2.TabIndex = 1;
             this.tabPageDossier2.Text = "Dossier";
             this.tabPageDossier2.UseVisualStyleBackColor = true;
+            // 
+            // labelResultat
+            // 
+            this.labelResultat.AutoSize = true;
+            this.labelResultat.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelResultat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelResultat.Location = new System.Drawing.Point(234, 201);
+            this.labelResultat.Name = "labelResultat";
+            this.labelResultat.Size = new System.Drawing.Size(83, 25);
+            this.labelResultat.TabIndex = 6;
+            this.labelResultat.Text = "Résultat";
+            // 
+            // labelMatiere
+            // 
+            this.labelMatiere.AutoSize = true;
+            this.labelMatiere.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelMatiere.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelMatiere.Location = new System.Drawing.Point(27, 201);
+            this.labelMatiere.Name = "labelMatiere";
+            this.labelMatiere.Size = new System.Drawing.Size(80, 25);
+            this.labelMatiere.TabIndex = 5;
+            this.labelMatiere.Text = "Matière";
+            // 
+            // labelGroupe
+            // 
+            this.labelGroupe.AutoSize = true;
+            this.labelGroupe.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelGroupe.Location = new System.Drawing.Point(89, 165);
+            this.labelGroupe.Name = "labelGroupe";
+            this.labelGroupe.Size = new System.Drawing.Size(61, 20);
+            this.labelGroupe.TabIndex = 4;
+            this.labelGroupe.Text = "Groupe:";
+            // 
+            // labelCode
+            // 
+            this.labelCode.AutoSize = true;
+            this.labelCode.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelCode.Location = new System.Drawing.Point(27, 125);
+            this.labelCode.Name = "labelCode";
+            this.labelCode.Size = new System.Drawing.Size(123, 20);
+            this.labelCode.TabIndex = 3;
+            this.labelCode.Text = "Code permanent:";
+            // 
+            // labelNom
+            // 
+            this.labelNom.AutoSize = true;
+            this.labelNom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelNom.Location = new System.Drawing.Point(105, 90);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(45, 20);
+            this.labelNom.TabIndex = 2;
+            this.labelNom.Text = "Nom:";
+            // 
+            // labelPrenom
+            // 
+            this.labelPrenom.AutoSize = true;
+            this.labelPrenom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPrenom.Location = new System.Drawing.Point(87, 52);
+            this.labelPrenom.Name = "labelPrenom";
+            this.labelPrenom.Size = new System.Drawing.Size(63, 20);
+            this.labelPrenom.TabIndex = 1;
+            this.labelPrenom.Text = "Prénom:";
+            // 
+            // labelDossierEtudiant2
+            // 
+            this.labelDossierEtudiant2.AutoSize = true;
+            this.labelDossierEtudiant2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelDossierEtudiant2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelDossierEtudiant2.Location = new System.Drawing.Point(27, 17);
+            this.labelDossierEtudiant2.Name = "labelDossierEtudiant2";
+            this.labelDossierEtudiant2.Size = new System.Drawing.Size(195, 25);
+            this.labelDossierEtudiant2.TabIndex = 0;
+            this.labelDossierEtudiant2.Text = "Dossier de l\'étudiant";
+            this.labelDossierEtudiant2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tabPageCahier3
             // 
@@ -129,79 +206,15 @@
             this.buttonQuitter1.UseVisualStyleBackColor = true;
             this.buttonQuitter1.Click += new System.EventHandler(this.buttonQuitter1_Click);
             // 
-            // labelDossierEtudiant2
+            // pictureBox1
             // 
-            this.labelDossierEtudiant2.AutoSize = true;
-            this.labelDossierEtudiant2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelDossierEtudiant2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelDossierEtudiant2.Location = new System.Drawing.Point(27, 17);
-            this.labelDossierEtudiant2.Name = "labelDossierEtudiant2";
-            this.labelDossierEtudiant2.Size = new System.Drawing.Size(195, 25);
-            this.labelDossierEtudiant2.TabIndex = 0;
-            this.labelDossierEtudiant2.Text = "Dossier de l\'étudiant";
-            this.labelDossierEtudiant2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // labelPrenom
-            // 
-            this.labelPrenom.AutoSize = true;
-            this.labelPrenom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPrenom.Location = new System.Drawing.Point(87, 52);
-            this.labelPrenom.Name = "labelPrenom";
-            this.labelPrenom.Size = new System.Drawing.Size(63, 20);
-            this.labelPrenom.TabIndex = 1;
-            this.labelPrenom.Text = "Prénom:";
-            // 
-            // labelNom
-            // 
-            this.labelNom.AutoSize = true;
-            this.labelNom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelNom.Location = new System.Drawing.Point(105, 90);
-            this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(45, 20);
-            this.labelNom.TabIndex = 2;
-            this.labelNom.Text = "Nom:";
-            // 
-            // labelCode
-            // 
-            this.labelCode.AutoSize = true;
-            this.labelCode.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelCode.Location = new System.Drawing.Point(27, 125);
-            this.labelCode.Name = "labelCode";
-            this.labelCode.Size = new System.Drawing.Size(123, 20);
-            this.labelCode.TabIndex = 3;
-            this.labelCode.Text = "Code permanent:";
-            // 
-            // labelGroupe
-            // 
-            this.labelGroupe.AutoSize = true;
-            this.labelGroupe.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelGroupe.Location = new System.Drawing.Point(89, 165);
-            this.labelGroupe.Name = "labelGroupe";
-            this.labelGroupe.Size = new System.Drawing.Size(61, 20);
-            this.labelGroupe.TabIndex = 4;
-            this.labelGroupe.Text = "Groupe:";
-            // 
-            // labelMatiere
-            // 
-            this.labelMatiere.AutoSize = true;
-            this.labelMatiere.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelMatiere.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelMatiere.Location = new System.Drawing.Point(27, 201);
-            this.labelMatiere.Name = "labelMatiere";
-            this.labelMatiere.Size = new System.Drawing.Size(80, 25);
-            this.labelMatiere.TabIndex = 5;
-            this.labelMatiere.Text = "Matière";
-            // 
-            // labelResultat
-            // 
-            this.labelResultat.AutoSize = true;
-            this.labelResultat.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelResultat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelResultat.Location = new System.Drawing.Point(234, 201);
-            this.labelResultat.Name = "labelResultat";
-            this.labelResultat.Size = new System.Drawing.Size(83, 25);
-            this.labelResultat.TabIndex = 6;
-            this.labelResultat.Text = "Résultat";
+            this.pictureBox1.Image = global::TP1nathalia_maclennan.Properties.Resources.image_Students;
+            this.pictureBox1.Location = new System.Drawing.Point(464, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(223, 239);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -219,6 +232,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo1)).EndInit();
             this.tabPageDossier2.ResumeLayout(false);
             this.tabPageDossier2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,5 +253,6 @@
         private Label labelCode;
         private Label labelNom;
         private Label labelPrenom;
+        private PictureBox pictureBox1;
     }
 }

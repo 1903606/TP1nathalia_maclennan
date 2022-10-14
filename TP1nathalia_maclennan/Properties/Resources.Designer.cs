@@ -59,5 +59,15 @@ namespace TP1nathalia_maclennan.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_Students {
+            get {
+                object obj = ResourceManager.GetObject("image_Students", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
