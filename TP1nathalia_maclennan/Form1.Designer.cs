@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControlCollege1 = new System.Windows.Forms.TabControl();
             this.tabPageAcceuil1 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxLogo1 = new System.Windows.Forms.PictureBox();
             this.tabPageDossier2 = new System.Windows.Forms.TabPage();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.comboBoxGrp = new System.Windows.Forms.ComboBox();
+            this.numericUpDownNote5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownNote4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownNote3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownNote1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownNote2 = new System.Windows.Forms.NumericUpDown();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxCodePerm = new System.Windows.Forms.TextBox();
+            this.textBoxNom = new System.Windows.Forms.TextBox();
+            this.textBoxPrenom = new System.Windows.Forms.TextBox();
             this.buttonEffacer = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -59,6 +60,17 @@
             this.labelPrenom = new System.Windows.Forms.Label();
             this.labelDossierEtudiant2 = new System.Windows.Forms.Label();
             this.tabPageCahier3 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.labelMoyenne = new System.Windows.Forms.Label();
             this.labelNote = new System.Windows.Forms.Label();
@@ -73,29 +85,34 @@
             this.listBoxGroupe = new System.Windows.Forms.ListBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonQuitter1 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.errorProviderPrenom = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderNom = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderCode = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderNote1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderNote2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderNote3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderNote4 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderNote5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControlCollege1.SuspendLayout();
             this.tabPageAcceuil1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo1)).BeginInit();
             this.tabPageDossier2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPageCahier3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderPrenom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote5)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlCollege1
@@ -116,7 +133,7 @@
             this.tabPageAcceuil1.Location = new System.Drawing.Point(4, 24);
             this.tabPageAcceuil1.Name = "tabPageAcceuil1";
             this.tabPageAcceuil1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAcceuil1.Size = new System.Drawing.Size(703, 412);
+            this.tabPageAcceuil1.Size = new System.Drawing.Size(721, 422);
             this.tabPageAcceuil1.TabIndex = 0;
             this.tabPageAcceuil1.Text = "Acceuil";
             this.tabPageAcceuil1.UseVisualStyleBackColor = true;
@@ -143,20 +160,20 @@
             // 
             // tabPageDossier2
             // 
-            this.tabPageDossier2.Controls.Add(this.numericUpDown5);
-            this.tabPageDossier2.Controls.Add(this.numericUpDown4);
-            this.tabPageDossier2.Controls.Add(this.numericUpDown3);
-            this.tabPageDossier2.Controls.Add(this.numericUpDown2);
-            this.tabPageDossier2.Controls.Add(this.numericUpDown1);
-            this.tabPageDossier2.Controls.Add(this.listBox1);
+            this.tabPageDossier2.Controls.Add(this.comboBoxGrp);
+            this.tabPageDossier2.Controls.Add(this.numericUpDownNote5);
+            this.tabPageDossier2.Controls.Add(this.numericUpDownNote4);
+            this.tabPageDossier2.Controls.Add(this.numericUpDownNote3);
+            this.tabPageDossier2.Controls.Add(this.numericUpDownNote1);
+            this.tabPageDossier2.Controls.Add(this.numericUpDownNote2);
             this.tabPageDossier2.Controls.Add(this.textBox9);
             this.tabPageDossier2.Controls.Add(this.textBox8);
             this.tabPageDossier2.Controls.Add(this.textBox7);
             this.tabPageDossier2.Controls.Add(this.textBox6);
             this.tabPageDossier2.Controls.Add(this.textBox5);
-            this.tabPageDossier2.Controls.Add(this.textBox3);
-            this.tabPageDossier2.Controls.Add(this.textBox2);
-            this.tabPageDossier2.Controls.Add(this.textBox1);
+            this.tabPageDossier2.Controls.Add(this.textBoxCodePerm);
+            this.tabPageDossier2.Controls.Add(this.textBoxNom);
+            this.tabPageDossier2.Controls.Add(this.textBoxPrenom);
             this.tabPageDossier2.Controls.Add(this.buttonEffacer);
             this.tabPageDossier2.Controls.Add(this.buttonSave);
             this.tabPageDossier2.Controls.Add(this.pictureBox1);
@@ -170,54 +187,58 @@
             this.tabPageDossier2.Location = new System.Drawing.Point(4, 24);
             this.tabPageDossier2.Name = "tabPageDossier2";
             this.tabPageDossier2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDossier2.Size = new System.Drawing.Size(703, 412);
+            this.tabPageDossier2.Size = new System.Drawing.Size(721, 422);
             this.tabPageDossier2.TabIndex = 1;
             this.tabPageDossier2.Text = "Dossier";
             this.tabPageDossier2.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown5
+            // comboBoxGrp
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(310, 342);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(83, 23);
-            this.numericUpDown5.TabIndex = 24;
+            this.comboBoxGrp.FormattingEnabled = true;
+            this.comboBoxGrp.Items.AddRange(new object[] {
+            "Groupe 50",
+            "Groupe 51"});
+            this.comboBoxGrp.Location = new System.Drawing.Point(156, 162);
+            this.comboBoxGrp.Name = "comboBoxGrp";
+            this.comboBoxGrp.Size = new System.Drawing.Size(237, 23);
+            this.comboBoxGrp.TabIndex = 25;
+            this.comboBoxGrp.SelectedIndexChanged += new System.EventHandler(this.comboBoxGrp_SelectedIndexChanged);
             // 
-            // numericUpDown4
+            // numericUpDownNote5
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(309, 313);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(83, 23);
-            this.numericUpDown4.TabIndex = 23;
+            this.numericUpDownNote5.Location = new System.Drawing.Point(310, 342);
+            this.numericUpDownNote5.Name = "numericUpDownNote5";
+            this.numericUpDownNote5.Size = new System.Drawing.Size(83, 23);
+            this.numericUpDownNote5.TabIndex = 24;
+            this.numericUpDownNote5.ValueChanged += new System.EventHandler(this.numericUpDownNote5_ValueChanged);
             // 
-            // numericUpDown3
+            // numericUpDownNote4
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(310, 284);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(83, 23);
-            this.numericUpDown3.TabIndex = 22;
+            this.numericUpDownNote4.Location = new System.Drawing.Point(309, 313);
+            this.numericUpDownNote4.Name = "numericUpDownNote4";
+            this.numericUpDownNote4.Size = new System.Drawing.Size(83, 23);
+            this.numericUpDownNote4.TabIndex = 23;
             // 
-            // numericUpDown2
+            // numericUpDownNote3
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(309, 226);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(83, 23);
-            this.numericUpDown2.TabIndex = 21;
+            this.numericUpDownNote3.Location = new System.Drawing.Point(310, 284);
+            this.numericUpDownNote3.Name = "numericUpDownNote3";
+            this.numericUpDownNote3.Size = new System.Drawing.Size(83, 23);
+            this.numericUpDownNote3.TabIndex = 22;
             // 
-            // numericUpDown1
+            // numericUpDownNote1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(309, 255);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(83, 23);
-            this.numericUpDown1.TabIndex = 20;
+            this.numericUpDownNote1.Location = new System.Drawing.Point(309, 226);
+            this.numericUpDownNote1.Name = "numericUpDownNote1";
+            this.numericUpDownNote1.Size = new System.Drawing.Size(83, 23);
+            this.numericUpDownNote1.TabIndex = 21;
             // 
-            // listBox1
+            // numericUpDownNote2
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(156, 165);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(236, 19);
-            this.listBox1.TabIndex = 19;
+            this.numericUpDownNote2.Location = new System.Drawing.Point(309, 255);
+            this.numericUpDownNote2.Name = "numericUpDownNote2";
+            this.numericUpDownNote2.Size = new System.Drawing.Size(83, 23);
+            this.numericUpDownNote2.TabIndex = 20;
             // 
             // textBox9
             // 
@@ -264,26 +285,27 @@
             this.textBox5.TabIndex = 14;
             this.textBox5.Text = "Base de données";
             // 
-            // textBox3
+            // textBoxCodePerm
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 126);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(236, 23);
-            this.textBox3.TabIndex = 12;
+            this.textBoxCodePerm.Location = new System.Drawing.Point(156, 126);
+            this.textBoxCodePerm.Name = "textBoxCodePerm";
+            this.textBoxCodePerm.Size = new System.Drawing.Size(236, 23);
+            this.textBoxCodePerm.TabIndex = 12;
             // 
-            // textBox2
+            // textBoxNom
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(236, 23);
-            this.textBox2.TabIndex = 11;
+            this.textBoxNom.Location = new System.Drawing.Point(156, 91);
+            this.textBoxNom.Name = "textBoxNom";
+            this.textBoxNom.Size = new System.Drawing.Size(236, 23);
+            this.textBoxNom.TabIndex = 11;
             // 
-            // textBox1
+            // textBoxPrenom
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 23);
-            this.textBox1.TabIndex = 10;
+            this.textBoxPrenom.Location = new System.Drawing.Point(156, 52);
+            this.textBoxPrenom.Name = "textBoxPrenom";
+            this.textBoxPrenom.Size = new System.Drawing.Size(236, 23);
+            this.textBoxPrenom.TabIndex = 10;
+            this.textBoxPrenom.TextChanged += new System.EventHandler(this.textBoxPrenom_TextChanged);
             // 
             // buttonEffacer
             // 
@@ -293,6 +315,7 @@
             this.buttonEffacer.TabIndex = 9;
             this.buttonEffacer.Text = "Effacer";
             this.buttonEffacer.UseVisualStyleBackColor = true;
+            this.buttonEffacer.Click += new System.EventHandler(this.buttonEffacer_Click);
             // 
             // buttonSave
             // 
@@ -421,6 +444,96 @@
             this.tabPageCahier3.TabIndex = 2;
             this.tabPageCahier3.Text = "Cahier de notes";
             this.tabPageCahier3.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(315, 396);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 20);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Moyenne générale";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(477, 393);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
+            this.textBox19.Size = new System.Drawing.Size(100, 23);
+            this.textBox19.TabIndex = 22;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(597, 353);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(100, 23);
+            this.textBox18.TabIndex = 21;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(597, 324);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(100, 23);
+            this.textBox17.TabIndex = 20;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(597, 295);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(100, 23);
+            this.textBox16.TabIndex = 19;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(597, 266);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(100, 23);
+            this.textBox15.TabIndex = 18;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(597, 237);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(100, 23);
+            this.textBox14.TabIndex = 17;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(477, 353);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(100, 23);
+            this.textBox13.TabIndex = 16;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(477, 324);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            this.textBox12.Size = new System.Drawing.Size(100, 23);
+            this.textBox12.TabIndex = 15;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(477, 295);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(100, 23);
+            this.textBox11.TabIndex = 14;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(477, 266);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(100, 23);
+            this.textBox10.TabIndex = 13;
             // 
             // textBox4
             // 
@@ -553,95 +666,37 @@
             this.buttonQuitter1.UseVisualStyleBackColor = true;
             this.buttonQuitter1.Click += new System.EventHandler(this.buttonQuitter1_Click);
             // 
-            // textBox10
+            // errorProviderPrenom
             // 
-            this.textBox10.Location = new System.Drawing.Point(477, 266);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(100, 23);
-            this.textBox10.TabIndex = 13;
+            this.errorProviderPrenom.ContainerControl = this;
             // 
-            // textBox11
+            // errorProviderNom
             // 
-            this.textBox11.Location = new System.Drawing.Point(477, 295);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(100, 23);
-            this.textBox11.TabIndex = 14;
+            this.errorProviderNom.ContainerControl = this;
             // 
-            // textBox12
+            // errorProviderCode
             // 
-            this.textBox12.Location = new System.Drawing.Point(477, 324);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(100, 23);
-            this.textBox12.TabIndex = 15;
+            this.errorProviderCode.ContainerControl = this;
             // 
-            // textBox13
+            // errorProviderNote1
             // 
-            this.textBox13.Location = new System.Drawing.Point(477, 353);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(100, 23);
-            this.textBox13.TabIndex = 16;
+            this.errorProviderNote1.ContainerControl = this;
             // 
-            // textBox14
+            // errorProviderNote2
             // 
-            this.textBox14.Location = new System.Drawing.Point(597, 237);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(100, 23);
-            this.textBox14.TabIndex = 17;
+            this.errorProviderNote2.ContainerControl = this;
             // 
-            // textBox15
+            // errorProviderNote3
             // 
-            this.textBox15.Location = new System.Drawing.Point(597, 266);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(100, 23);
-            this.textBox15.TabIndex = 18;
+            this.errorProviderNote3.ContainerControl = this;
             // 
-            // textBox16
+            // errorProviderNote4
             // 
-            this.textBox16.Location = new System.Drawing.Point(597, 295);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(100, 23);
-            this.textBox16.TabIndex = 19;
+            this.errorProviderNote4.ContainerControl = this;
             // 
-            // textBox17
+            // errorProviderNote5
             // 
-            this.textBox17.Location = new System.Drawing.Point(597, 324);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(100, 23);
-            this.textBox17.TabIndex = 20;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(597, 353);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(100, 23);
-            this.textBox18.TabIndex = 21;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(477, 393);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(100, 23);
-            this.textBox19.TabIndex = 22;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(315, 396);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 20);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Moyenne générale";
+            this.errorProviderNote5.ContainerControl = this;
             // 
             // Form1
             // 
@@ -659,15 +714,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo1)).EndInit();
             this.tabPageDossier2.ResumeLayout(false);
             this.tabPageDossier2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNote2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPageCahier3.ResumeLayout(false);
             this.tabPageCahier3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderPrenom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderNote5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -689,20 +752,19 @@
         private Label labelNom;
         private Label labelPrenom;
         private PictureBox pictureBox1;
-        private NumericUpDown numericUpDown5;
-        private NumericUpDown numericUpDown4;
-        private NumericUpDown numericUpDown3;
-        private NumericUpDown numericUpDown2;
-        private NumericUpDown numericUpDown1;
-        private ListBox listBox1;
+        private NumericUpDown numericUpDownNote5;
+        private NumericUpDown numericUpDownNote4;
+        private NumericUpDown numericUpDownNote3;
+        private NumericUpDown numericUpDownNote1;
+        private NumericUpDown numericUpDownNote2;
         private TextBox textBox9;
         private TextBox textBox8;
         private TextBox textBox7;
         private TextBox textBox6;
         private TextBox textBox5;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox textBoxCodePerm;
+        private TextBox textBoxNom;
+        private TextBox textBoxPrenom;
         private Button buttonEffacer;
         private Button buttonSave;
         private Label labelMoyenne;
@@ -729,5 +791,14 @@
         private TextBox textBox12;
         private TextBox textBox11;
         private TextBox textBox10;
+        private ErrorProvider errorProviderPrenom;
+        private ErrorProvider errorProviderNom;
+        private ErrorProvider errorProviderCode;
+        private ErrorProvider errorProviderNote1;
+        private ErrorProvider errorProviderNote2;
+        private ErrorProvider errorProviderNote3;
+        private ErrorProvider errorProviderNote4;
+        private ErrorProvider errorProviderNote5;
+        private ComboBox comboBoxGrp;
     }
 }
