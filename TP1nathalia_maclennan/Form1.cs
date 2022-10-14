@@ -175,9 +175,12 @@ namespace TP1nathalia_maclennan
                 // Creation d'un objet Étudiant
                 Etudiant unEtudiant = new Etudiant(textBoxCodePerm.Text, textBoxPrenom.Text, textBoxNom.Text);
                 tabEtudiant[nb_etud++] = unEtudiant;
+              
 
                 //Ajout de l'etudiant dans Cahier de notes
                 listBoxGroupe.Items.Add(unEtudiant);
+                
+
 
                 //MessageBox qui indique les donnees ont sauvegarder
                 MessageBox.Show("Les données de l’étudiant ont été sauvegardées! :)", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -197,9 +200,17 @@ namespace TP1nathalia_maclennan
 
         }
 
+        // Active le bouton sauvegarder ssi ce n'est pas vide
         private void textBoxPrenom_TextChanged(object sender, EventArgs e)
         {
-
+            if (textBoxPrenom.Text != "" && textBoxNom.Text != "")
+            {
+                buttonSave.Enabled = true;
+            }
+            else
+            {
+                buttonSave.Enabled = false;
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -286,5 +297,79 @@ namespace TP1nathalia_maclennan
             { 
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+                }
+
+        private void textBoxPrenom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Char touche = e.KeyChar;
+
+            //accepte les lettres et des caractères de contrôle et n'est pas vide
+            if (Char.IsLetter(touche) || Char.IsControl(touche))
+            {
+                //accepte la touche
+                e.Handled = false;
+            }
+            else
+            {
+                //annuler la touche
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxNom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Char touche = e.KeyChar;
+
+            //accepte les lettres et des caractères de contrôle et n'est pas vide
+            if (Char.IsLetter(touche) || Char.IsControl(touche))
+            {
+                //accepte la touche
+                e.Handled = false;
+            }
+            else
+            {
+                //annuler la touche
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxNom_TextChanged(object sender, EventArgs e)
+        {
+            // Active le bouton sauvegarder ssi ce n'est pas vide
+            if (textBoxPrenom.Text != "" && textBoxNom.Text != "")
+            {
+                buttonSave.Enabled = true;
+            }
+            else
+            {
+                buttonSave.Enabled = false;
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        //Demande si on veut quitter l'application
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult resultat = MessageBox.Show("Voulez-vous quitter?", "Fermeture de l'application", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultat == DialogResult.Yes)
+            {
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+
+        }
     }
-}
+        }
+    
+

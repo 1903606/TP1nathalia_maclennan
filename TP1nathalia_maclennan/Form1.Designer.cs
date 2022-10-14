@@ -298,6 +298,8 @@
             this.textBoxNom.Name = "textBoxNom";
             this.textBoxNom.Size = new System.Drawing.Size(236, 23);
             this.textBoxNom.TabIndex = 11;
+            this.textBoxNom.TextChanged += new System.EventHandler(this.textBoxNom_TextChanged);
+            this.textBoxNom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNom_KeyPress);
             // 
             // textBoxPrenom
             // 
@@ -306,6 +308,7 @@
             this.textBoxPrenom.Size = new System.Drawing.Size(236, 23);
             this.textBoxPrenom.TabIndex = 10;
             this.textBoxPrenom.TextChanged += new System.EventHandler(this.textBoxPrenom_TextChanged);
+            this.textBoxPrenom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPrenom_KeyPress);
             // 
             // buttonEffacer
             // 
@@ -455,6 +458,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(422, 23);
             this.comboBox1.TabIndex = 24;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -713,6 +717,8 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Collège Nathalia Maclennan";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControlCollege1.ResumeLayout(false);
             this.tabPageAcceuil1.ResumeLayout(false);
             this.tabPageAcceuil1.PerformLayout();
